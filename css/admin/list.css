@@ -1,0 +1,93 @@
+.nav-page {
+    background-color: #8AC4C3;
+    width: 100%;
+    height: 50px;
+}
+.nav-title {
+    text-align: center;
+    color:#FFFFFF;
+    line-height: 50px;
+    font-size: 20px;
+}
+.icon-logout {
+    position: absolute;
+    right: 5rem;
+    top: 0;
+    line-height: 50px;
+    color:#FFFFFF;
+}
+.list-content {
+    width: 100%;
+    height: 80px;
+    padding: 0 5rem;
+}
+.wrap-checkbox-all {
+    padding-top: 50px;
+}
+.block-btn-action {
+    position:absolute;
+    right: 0;
+    padding-right: 5rem;
+    padding-top: 88px;
+    top: 0;
+}
+.btn-upload {
+    color: #FFFFFF;
+    background-color: #8AC4C3;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+.btn-del {
+    color: #FFFFFF;
+    background-color: #EA4343;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    font-weight: 600;
+}
+hr {
+    color: black;
+}
+.item {
+    width: 100%;
+    border: 1px solid #8AC4C3;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.checkbox-item {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}
+.block-paginate {
+    max-width: 100%;
+    bottom: 10%;
+    position: absolute;
+    left: 50%;
+}
+.page-numb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+.active {
+    color: #FFFFFF;
+    background-color: #EA4343 ;
+}
+.no-active {
+    background-color: #FFFFFF;
+    color: #EA4343 ;
+    border: 1px solid #EA4343;
+}
+.item-checked {
+    border: none;
+    background-color: #E2E2E2;
+    border: 1px solid #E2E2E2;
+}
