@@ -40,6 +40,8 @@
      -webkit-line-clamp: 1;
      -webkit-box-orient: vertical;
       display: -webkit-box;
+      margin-top: 1rem;
+      padding-left: 1rem;
  }
 .block-paginate {
     width: 100%;
@@ -49,17 +51,6 @@
 }
 .char {
     color: #FF8989 ;
-}
-.page-numb {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    float: left;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-    line-height: 30px;
-    box-sizing: initial;
 }
 .active {
     color: #FFFFFF;
@@ -71,10 +62,16 @@
     color: #FF8989 ;
     border: 1px solid #FF8989;
 }
-.item-checked {
-    border: none;
-    background-color: #E2E2E2;
-    border: 1px solid #E2E2E2;
+.page-numb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+    box-sizing: initial;
 }
 .popup-logout {
     position: absolute;
@@ -102,4 +99,7 @@
 .btn-logout {
     margin-left: 15px;
     background-color: #8AC4C3;
+}
+.file-name {
+    margin-left: 10px;
 }
