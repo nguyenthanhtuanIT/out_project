@@ -31,19 +31,22 @@
     padding-top: 88px;
     top: 0;
 }
-.btn-upload {
-    color: #FFFFFF;
-    background-color: #8AC4C3;
+.btn {
     border-radius: 5px;
     border: none;
     padding: 5px;
+    outline: none;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn-upload {
+    color: #FFFFFF;
+    background-color: #8AC4C3;
 }
 .btn-del {
     color: #FFFFFF;
     background-color: #EA4343;
-    border-radius: 5px;
-    border: none;
-    padding: 5px;
     font-weight: 600;
 }
 hr {
@@ -55,39 +58,66 @@ hr {
     border-radius: 5px;
     background-color: #FFFFFF;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 7px;
 }
 .checkbox-item {
     position: absolute;
     right: 2rem;
-    top: 1rem;
+    top: 2rem;
+    display: flex;
 }
 .block-paginate {
-    max-width: 100%;
-    bottom: 10%;
-    position: absolute;
-    left: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  left: calc(50% - 120px);
 }
+
 .page-numb {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     float: left;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
+    line-height: 30px;
+    box-sizing: initial;
+}
+.char {
+    color: #FF8989 ;
 }
 .active {
     color: #FFFFFF;
-    background-color: #EA4343 ;
+    background-color: #FF8989 ;
+    border: 1px solid #FF8989;
 }
 .no-active {
     background-color: #FFFFFF;
-    color: #EA4343 ;
-    border: 1px solid #EA4343;
+    color: #FF8989 ;
+    border: 1px solid #FF8989;
 }
 .item-checked {
     border: none;
     background-color: #E2E2E2;
     border: 1px solid #E2E2E2;
+}
+input[type=checkbox]{
+    transform: scale(1.5);
+    margin-right: 10px;
+    margin-left: 4px;
+}
+.item .content {
+    width: 70%;
+    margin: 0 1rem;
+    margin-top: 1rem;
+}
+.item .content p {
+   width: 100%;
+   white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
 }
