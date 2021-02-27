@@ -1,0 +1,105 @@
+.nav-page {
+    background-color: #8AC4C3;
+    width: 100%;
+    height: 50px;
+}
+.nav-title {
+    text-align: center;
+    color:#FFFFFF;
+    line-height: 50px;
+    font-size: 20px;
+}
+.icon-logout {
+    position: absolute;
+    right: 5rem;
+    top: 0;
+    line-height: 50px;
+    color:#FFFFFF;
+}
+.icon-logout:hover {
+    cursor: pointer;
+}
+.list-content {
+    width: 100%;
+    height: 80px;
+    padding: 50px 5rem;
+}
+.item {
+    width: 100%;
+    border: 1px solid #8AC4C3;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.item .content p {
+    width: 100%;
+    white-space: pre-wrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     -webkit-line-clamp: 1;
+     -webkit-box-orient: vertical;
+      display: -webkit-box;
+ }
+.block-paginate {
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    left: calc(50% - 120px);
+}
+.char {
+    color: #FF8989 ;
+}
+.page-numb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+    box-sizing: initial;
+}
+.active {
+    color: #FFFFFF;
+    background-color: #FF8989 ;
+    border: 1px solid #FF8989;
+}
+.no-active {
+    background-color: #FFFFFF;
+    color: #FF8989 ;
+    border: 1px solid #FF8989;
+}
+.item-checked {
+    border: none;
+    background-color: #E2E2E2;
+    border: 1px solid #E2E2E2;
+}
+.popup-logout {
+    position: absolute;
+    padding: 30px;
+    background-color:  #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.tilte-popup {
+    font-size: 18px;
+}
+.btn {
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.btn-cancel {
+    margin-right: 15px;
+    background-color: #99999D;
+}
+.btn-logout {
+    margin-left: 15px;
+    background-color: #8AC4C3;
+}
