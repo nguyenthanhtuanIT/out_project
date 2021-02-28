@@ -32,9 +32,13 @@
     top: 0;
 }
 .btn {
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
-    padding: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+.btn:focus {
+    border: none;
     outline: none;
 }
 .btn:hover {
@@ -88,13 +92,13 @@ hr {
     color: #FF8989 ;
 }
 .active {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     background-color: #FF8989 ;
     border: 1px solid #FF8989;
 }
 .no-active {
     background-color: #FFFFFF;
-    color: #FF8989 ;
+    color: #FF8989 !important;
     border: 1px solid #FF8989;
 }
 .item-checked {
@@ -120,4 +124,36 @@ input[type=checkbox]{
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
      display: -webkit-box;
+}
+.popup-title {
+    color: #707070;
+    font-size: 18px;
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 350px;
+    }
+}
+.modal-dialog-custom {
+    text-align: center;
+}
+.modal-content-custom{
+    padding: 50px 0;
+}
+.popup-btn {
+  
+}
+.btn-cancel {
+    width: 120px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background-color: #99999D;
+    margin-right: 20px;
+}
+.btn-delete {
+    width: 120px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background-color: #EA4343;
+    margin-left: 20px;
 }
