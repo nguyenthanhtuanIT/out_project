@@ -21,7 +21,7 @@
     <div class="nav-page">
       <p class="nav-title">List File </p>
       <a data-target="#modalLogout" data-toggle="modal" class="icon-logout"
-      href="#modalLogout"><i class="fas fa-sign-out-alt"></i></a>
+      href="#modalLogout"><img src="../../images/icons/logout.svg" alt=""></a>
     </div>
     <div class="list-content">
       <div class="wrap-checkbox-all">
@@ -52,10 +52,10 @@
               <div class="content">
                 <p><span><img src="../../images/icons/pdf.svg"></span> Name file</p>
               </div>
-                <input class="checkbox-item" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-              </div>
+              <input class="checkbox-item" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
             </div>
-            <div class="col-4">
+          </div>
+          <div class="col-4">
             <div class="item item-checked">
               <div class="content">
                 <p><span><img src="../../images/icons/pdf.svg"></span> Name file</p>
@@ -70,7 +70,7 @@
               </div>
               <input class="checkbox-item" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
             </div>
-          </div>  
+          </div> 
         </div>
         </div>
         <div class="row">
@@ -127,7 +127,7 @@
                   <input type="file" class="form-control-file" id="inputFile" onchange="readUrl(this)" data-title="Drag and drop a file">
                 </div>
             </div>
-              <button type="submit" class="btn sub-upload">選択中の項⽬を</button>
+              <button type="submit" class="btn sub-upload" onclick="document.getElementById('inputFile').click()">選択中の項⽬を</button>
             </div>
           </div>
           

@@ -7,7 +7,8 @@
     text-align: center;
     color:#FFFFFF;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 500px;
 }
 .icon-logout {
     position: absolute;
@@ -210,4 +211,14 @@ visibility: visible;
 text-align: center;
 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 overflow: visible;
+}
+
+@media (min-width: 576px) {
+    .list {
+        max-height:  450px;
+    }
+}
+.list {
+    overflow-y: auto;
+    overflow-x: hidden;
 }
