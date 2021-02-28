@@ -15,6 +15,10 @@
     top: 0;
     line-height: 50px;
     color:#FFFFFF;
+    z-index: 9;
+}
+.icon-logout:hover {
+    color:#FFFFFF;
 }
 .list-content {
     width: 100%;
@@ -34,7 +38,7 @@
 .btn {
     border-radius: 10px;
     border: none;
-    padding: 5px 10px;
+    padding: 10px;
     outline: none;
 }
 .btn:focus {
@@ -61,7 +65,7 @@ hr {
     border: 1px solid #8AC4C3;
     border-radius: 5px;
     background-color: #FFFFFF;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     margin-top: 7px;
 }
 .checkbox-item {
@@ -140,9 +144,6 @@ input[type=checkbox]{
 .modal-content-custom{
     padding: 50px 0;
 }
-.popup-btn {
-  
-}
 .btn-cancel {
     width: 120px;
     color: #FFFFFF;
@@ -155,5 +156,12 @@ input[type=checkbox]{
     color: #FFFFFF;
     border-radius: 5px;
     background-color: #EA4343;
+    margin-left: 20px;
+}
+.btn-logout {
+    width: 120px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background-color: #8AC4C3;
     margin-left: 20px;
 }
