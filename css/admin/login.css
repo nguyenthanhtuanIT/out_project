@@ -34,13 +34,14 @@
     cursor: pointer;
     background-color: #FFFFFF;
     color: #848484;
+    border: 1px solid #848484;
 }
 .form-login {
     margin-top: 120px;
 }
 .input-form {
     border: 1px solid #707070;
-    border-radius: 5px;
+    border-radius: 10px;
     outline-style: none;
     width: 400px;
     height: 52px;
@@ -58,4 +59,5 @@
 .active-btn:hover {
     background-color: #FFFFFF;
     color: #8AC4C3;
+    border: 1px solid #8AC4C3;
 }
