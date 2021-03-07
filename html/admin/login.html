@@ -13,33 +13,29 @@
   <script src="../../js/login.js"></script>
   <link href="../..//css/common.css" rel="stylesheet">
   <link href="../../css/admin/login.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="wrap-content">
-      <div class="admin-login-page">
-        <div class="row">
-          <div class="col-6 content">
-            <h1 class="title">Login</h1>
-            <form class="form-login">
-                <div class="form-group mb-5">
-                  <img id="icon-user" class="fas" src="../../images/icons/user.svg" alt="">
-                  <input id="inp-id" type="text" class="input-form" placeholder="ID" value="" onchange="isEnterValue()" />
-                  <span class="error-text">abc</span>
-                </div>
-                <div class="form-group">
-                  <img id="icon-lock" class="fas" src="../../images/icons/lock.svg" alt="">
-                  <input id="inp-password" type="password" class="input-form" placeholder="Password" value="" onchange="isEnterValue()" />
-                  <span class="error-text">abc</span>
-                </div>
-                <div class="form-group">
-                  <button id="btn-login" type="submit" class="btn-login">Login</button>
-                </div>
-            </form>
+  <div class="wrap-content">
+    <div class="admin-login-page">
+      <div class="content">
+        <p class="title-login">Login</p>
+        <form class="form-login">
+          <div class="mb-50">
+            <img id="icon-user" class="fas" src="../../images/icons/user.svg" alt="">
+            <input id="inp-id" type="text" class="input-form" placeholder="ID" value="" onchange="isEnterValue()" />
           </div>
-        </div>
+          <div>
+            <img id="icon-lock" class="fas" src="../../images/icons/lock.svg" alt="">
+            <input id="inp-password" type="password" class="input-form" placeholder="Password" value="" onchange="isEnterValue()" />
+            <p class="error-text">abc</p>
+          </div>
+          <div>
+            <button id="btn-login" type="submit" class="btn-login">Login</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

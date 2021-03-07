@@ -1,52 +1,66 @@
 .admin-login-page {
+    display: flex;
     width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 .content {
-    position: absolute;
-    top: 40%;
-    margin-top: -100px;
-    margin-left: 25%;
+   display: flex;
+   width: 400px;
+   height: fit-content;
+   flex-direction: column;
+   align-items: center;
+   overflow-x: auto;
 }
-.title {
-    text-align: center;
-    color: #848484;
+.title-login {
+    color:#707070;
+    font-size: 90px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .btn-login {
     font-size: 18px;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-top: 120px;
     width: 100%;
     background-color: #848484;
     border-radius: 25px;
     color: #FFFFFF;
-    height: calc(3rem + 2px);
+    height: 54px;
     border: none;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .btn-login:focus {
     outline: 0;
 }
 .btn-login:hover {
     cursor: pointer;
+    background-color: #FFFFFF;
+    color: #848484;
+    border: 1px solid #848484;
 }
 .form-login {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 .input-form {
     border: 1px solid #707070;
-    border-radius: 5px;
+    border-radius: 10px;
     outline-style: none;
-    width: 100%;
-    height: calc(3rem + 2px);
-    padding: .375rem 2.5rem;
-    line-height: 1.5;
+    width: 400px;
+    height: 52px;
+    line-height: 52px;
     color: #495057;
+    padding-left: 44px;
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif
 }
 .fas {
     position: absolute;
-    color: #8AC4C3;
-    left: 30px;
-    margin-top: 18px;
+    padding: 18px;
 }
 .active-btn {
     background-color: #8AC4C3;
+}
+.active-btn:hover {
+    background-color: #FFFFFF;
+    color: #8AC4C3;
+    border: 1px solid #8AC4C3;
 }
