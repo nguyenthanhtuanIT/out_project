@@ -10,6 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="../../js/upload.js"></script>
   <link href="../..//css/common.css" rel="stylesheet">
   <link href="../../css/admin/list.css" rel="stylesheet">
   <title>Document</title>
@@ -19,7 +20,8 @@
   <div class="wrap-content">
     <div class="nav-page">
       <p class="nav-title">List File </p>
-      <p class="icon-logout"><i class="fas fa-sign-out-alt"></i></p>
+      <a data-target="#modalLogout" data-toggle="modal" class="icon-logout"
+      href="#modalLogout"><img src="../../images/icons/logout.svg" alt=""></a>
     </div>
     <div class="list-content">
       <div class="wrap-checkbox-all">
@@ -27,10 +29,10 @@
         <label for="vehicle1"> Check all</label><br>
       </div>
       <div class="block-btn-action">
-        <button class="btn btn-upload" type="button" data-toggle="modal" data-target="#exampleModalCenter">
-          <i class="fas fa-plus"></i> Upload file
+        <button class="btn btn-upload" type="button" data-toggle="modal" data-target="#modalUpload">
+          <i class="fas fa-plus"></i>  Upload fileUpload file
         </button>
-        <button class="btn btn-del" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+        <button class="btn btn-del" type="button" data-toggle="modal" data-target="#modalDelete">
           <i class="fas fa-trash-alt"></i> Delete
         </button>
       </div>
@@ -50,10 +52,10 @@
               <div class="content">
                 <p><span><img src="../../images/icons/pdf.svg"></span> Name file</p>
               </div>
-                <input class="checkbox-item" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-              </div>
+              <input class="checkbox-item" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
             </div>
-            <div class="col-4">
+          </div>
+          <div class="col-4">
             <div class="item item-checked">
               <div class="content">
                 <p><span><img src="../../images/icons/pdf.svg"></span> Name file</p>
@@ -68,7 +70,7 @@
               </div>
               <input class="checkbox-item" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
             </div>
-          </div>  
+          </div> 
         </div>
         </div>
         <div class="row">
@@ -92,8 +94,8 @@
       </div>
     </div>
   </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <!-- Modal delete-->
+    <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-custom" role="document">
         <div class="modal-content modal-content-custom">
           <p class="popup-title">選択中の項⽬を削除しますか？</p>
@@ -101,6 +103,34 @@
             <button type="button" class="btn btn-cancel" data-dismiss="modal">キセル</button>
             <button type="submit" class="btn btn-delete">削除</button>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalLogout" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-custom" role="document">
+        <div class="modal-content modal-content-custom">
+          <p class="popup-title">選択中の項⽬を削除しますか？</p>
+          <div>
+            <button type="button" class="btn btn-cancel" data-dismiss="modal">キセル</button>
+            <button type="submit" class="btn btn-logout">削除</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalUpload" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-upload-custom" role="document">
+        <div class="modal-content upload-content-custom">
+          <div>
+            <div class="block-content">
+              <div>
+                <div class="form-group inputDnD">
+                  <input type="file" class="form-control-file" id="inputFile" onchange="readUrl(this)" data-title="Drag and drop a file">
+                </div>
+            </div>
+              <button type="submit" class="btn sub-upload" onclick="document.getElementById('inputFile').click()">選択中の項⽬を</button>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
