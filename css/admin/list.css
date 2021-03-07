@@ -7,13 +7,18 @@
     text-align: center;
     color:#FFFFFF;
     line-height: 50px;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 500px;
 }
 .icon-logout {
     position: absolute;
     right: 5rem;
     top: 0;
     line-height: 50px;
+    color:#FFFFFF;
+    z-index: 9;
+}
+.icon-logout:hover {
     color:#FFFFFF;
 }
 .list-content {
@@ -31,19 +36,33 @@
     padding-top: 88px;
     top: 0;
 }
+.btn {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+.btn:focus {
+    border: none;
+    outline: none;
+}
+.btn:hover {
+    cursor: pointer;
+}
 .btn-upload {
     color: #FFFFFF;
     background-color: #8AC4C3;
-    border-radius: 5px;
-    border: none;
+}
+.sub-upload {
+    width: max-content;
+    color: #FFFFFF;
+    background-color: #8AC4C3;
     padding: 5px;
+    border-radius: 5px;
 }
 .btn-del {
     color: #FFFFFF;
     background-color: #EA4343;
-    border-radius: 5px;
-    border: none;
-    padding: 5px;
     font-weight: 600;
 }
 hr {
@@ -54,40 +73,153 @@ hr {
     border: 1px solid #8AC4C3;
     border-radius: 5px;
     background-color: #FFFFFF;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-top: 7px;
 }
 .checkbox-item {
     position: absolute;
     right: 2rem;
-    top: 1rem;
+    top: 2rem;
+    display: flex;
 }
 .block-paginate {
-    max-width: 100%;
-    bottom: 10%;
-    position: absolute;
-    left: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  left: calc(50% - 120px);
 }
+
 .page-numb {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     float: left;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
+    line-height: 30px;
+    box-sizing: initial;
+}
+.char {
+    color: #FF8989 ;
 }
 .active {
-    color: #FFFFFF;
-    background-color: #EA4343 ;
+    color: #FFFFFF !important;
+    background-color: #FF8989 ;
+    border: 1px solid #FF8989;
 }
 .no-active {
     background-color: #FFFFFF;
-    color: #EA4343 ;
-    border: 1px solid #EA4343;
+    color: #FF8989 !important;
+    border: 1px solid #FF8989;
 }
 .item-checked {
     border: none;
     background-color: #E2E2E2;
     border: 1px solid #E2E2E2;
+}
+input[type=checkbox]{
+    transform: scale(1.5);
+    margin-right: 10px;
+    margin-left: 4px;
+}
+.item .content {
+    width: 70%;
+    margin: 0 1rem;
+    margin-top: 1rem;
+}
+.item .content p {
+   width: 100%;
+   white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+}
+.popup-title {
+    color: #707070;
+    font-size: 18px;
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 350px;
+    }
+}
+@media (min-width: 576px) {
+    .modal-upload-custom {
+        max-width: 90%;
+    }
+}
+.modal-dialog-custom {
+    text-align: center;
+}
+.modal-content-custom{
+    padding: 50px 0;
+}
+.btn-cancel {
+    width: 120px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background-color: #99999D;
+    margin-right: 20px;
+}
+.btn-delete {
+    width: 120px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background-color: #EA4343;
+    margin-left: 20px;
+}
+.btn-logout {
+    width: 120px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background-color: #8AC4C3;
+    margin-left: 20px;
+}
+.upload-content-custom {
+    padding: 10rem 10rem;
+}
+.upload-content-custom .block-content {
+    border: 1.5px dashed #707070;
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom: 2rem;
+}
+.inputDnD .form-control-file {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 6em;
+    outline: none;
+    visibility: hidden;
+    cursor: pointer;
+    background-color: #606060;
+    box-shadow: 0 0 5px solid currentColor;
+}
+.inputDnD .form-control-file:before{
+content: attr(data-title);
+position: absolute;
+left: 0;
+width: 100%;
+min-height: 6em;
+line-height: 2em;
+padding-top: 4.5em;
+opacity: 1;
+visibility: visible;
+text-align: center;
+transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+overflow: visible;
+pointer-events: none;
+}
+
+@media (min-width: 576px) {
+    .list {
+        max-height:  450px;
+    }
+}
+.list {
+    overflow-y: auto;
+    overflow-x: hidden;
 }
