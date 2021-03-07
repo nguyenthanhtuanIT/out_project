@@ -13,6 +13,7 @@
   <script src="../../js/login.js"></script>
   <link href="../..//css/common.css" rel="stylesheet">
   <link href="../../css/admin/login.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
@@ -20,7 +21,7 @@
   <div class="wrap-content">
     <div class="admin-login-page">
       <div class="content">
-        <img class="img-login" src="../../images/icons/login.svg" alt="">
+        <p class="title-login">Login</p>
         <form class="form-login">
           <div class="mb-50">
             <img id="icon-user" class="fas" src="../../images/icons/user.svg" alt="">
@@ -29,7 +30,7 @@
           <div>
             <img id="icon-lock" class="fas" src="../../images/icons/lock.svg" alt="">
             <input id="inp-password" type="password" class="input-form" placeholder="Password" value="" onchange="isEnterValue()" />
-            <p class="error-text" style="display: none">abc</p>
+            <p class="error-text">abc</p>
           </div>
           <div>
             <button id="btn-login" type="submit" class="btn-login">Login</button>

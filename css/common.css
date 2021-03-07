@@ -15,6 +15,7 @@ body {
 .error-text {
     color: #FF0000;
     padding-left: 18px;
+    padding-top: 10px;
 }
 .mb-50 {
     margin-bottom: 50px;

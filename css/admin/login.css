@@ -13,9 +13,10 @@
    align-items: center;
    overflow-x: auto;
 }
-.img-login {
-    width: 208px;
-    margin-top: -20px;
+.title-login {
+    color:#707070;
+    font-size: 90px;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .btn-login {
     font-size: 18px;
@@ -26,6 +27,7 @@
     color: #FFFFFF;
     height: 54px;
     border: none;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .btn-login:focus {
     outline: 0;
@@ -34,19 +36,21 @@
     cursor: pointer;
     background-color: #FFFFFF;
     color: #848484;
+    border: 1px solid #848484;
 }
 .form-login {
     margin-top: 120px;
 }
 .input-form {
     border: 1px solid #707070;
-    border-radius: 5px;
+    border-radius: 10px;
     outline-style: none;
     width: 400px;
     height: 52px;
     line-height: 52px;
     color: #495057;
     padding-left: 44px;
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif
 }
 .fas {
     position: absolute;
@@ -58,4 +62,5 @@
 .active-btn:hover {
     background-color: #FFFFFF;
     color: #8AC4C3;
+    border: 1px solid #8AC4C3;
 }
