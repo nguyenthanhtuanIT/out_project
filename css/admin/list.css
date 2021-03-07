@@ -1,12 +1,13 @@
 .nav-page {
-    background-color: #8AC4C3;
+    background-color:rgb(138,196,195);
+    box-shadow: 1px rgb(213,222,229);
     width: 100%;
-    height: 50px;
+    height: 56px;
 }
 .nav-title {
     text-align: center;
     color:#FFFFFF;
-    line-height: 50px;
+    line-height: 56px;
     font-size: 25px;
     font-weight: 500px;
 }
@@ -14,37 +15,70 @@
     position: absolute;
     right: 5rem;
     top: 0;
-    line-height: 50px;
+    line-height: 52px;
     color:#FFFFFF;
     z-index: 9;
+}
+.img-logout{
+    width: 28px;
 }
 .icon-logout:hover {
     color:#FFFFFF;
 }
 .list-content {
+    display: flex;
     width: 100%;
-    height: 80px;
+    flex-direction: column;
     padding: 0 5rem;
+    height: 100vh;
+}
+.action {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 97px;
+    align-items: flex-end;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #979F9F;
 }
 .wrap-checkbox-all {
-    padding-top: 50px;
+    margin-bottom: -10px;
 }
-.block-btn-action {
-    position:absolute;
-    right: 0;
-    padding-right: 5rem;
-    padding-top: 88px;
-    top: 0;
+.list {
+    margin-top: 32px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 100%;
+    justify-content: space-around;
+}
+.item {
+    width: 100%;
+    border: 1px solid #8AC4C3;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 25px;
+}
+.item .content {
+    display: flex;
+}
+.name-file {
+    padding-top: 15px;
+    max-width: 150px;
+    color: #606060;
 }
 .btn {
     border-radius: 10px;
     border: none;
-    padding: 10px;
-    outline: none;
+    outline: unset;
 }
 .btn:focus {
     border: none;
-    outline: none;
+    outline: unset;
 }
 .btn:hover {
     cursor: pointer;
@@ -52,6 +86,9 @@
 .btn-upload {
     color: #FFFFFF;
     background-color: #8AC4C3;
+    height: 40px;
+    padding-right: 60px;
+    margin-right: 15px;
 }
 .sub-upload {
     width: max-content;
@@ -64,29 +101,14 @@
     color: #FFFFFF;
     background-color: #EA4343;
     font-weight: 600;
+    height: 40px;
 }
-hr {
-    color: black;
-}
-.item {
-    width: 100%;
-    border: 1px solid #8AC4C3;
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    margin-bottom: 25px;
-    margin-top: 7px;
-}
-.checkbox-item {
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    display: flex;
-}
+
 .block-paginate {
-  width: 100%;
-  position: absolute;
-  bottom: 10%;
-  left: calc(50% - 120px);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
 }
 
 .page-numb {
@@ -100,6 +122,9 @@ hr {
     line-height: 30px;
     box-sizing: initial;
 }
+.page-numb:hover {
+   cursor: pointer;
+}
 .char {
     color: #FF8989 ;
 }
@@ -108,9 +133,19 @@ hr {
     background-color: #FF8989 ;
     border: 1px solid #FF8989;
 }
+.active:hover {
+    background-color: #FFFFFF;
+    color: #FF8989 !important;
+    border: 1px solid #FF8989;
+}
 .no-active {
     background-color: #FFFFFF;
     color: #FF8989 !important;
+    border: 1px solid #FF8989;
+}
+.no-active:hover {
+    color: #FFFFFF !important;
+    background-color: #FF8989 ;
     border: 1px solid #FF8989;
 }
 .item-checked {
@@ -122,11 +157,6 @@ input[type=checkbox]{
     transform: scale(1.5);
     margin-right: 10px;
     margin-left: 4px;
-}
-.item .content {
-    width: 70%;
-    margin: 0 1rem;
-    margin-top: 1rem;
 }
 .item .content p {
    width: 100%;
@@ -199,27 +229,33 @@ input[type=checkbox]{
     box-shadow: 0 0 5px solid currentColor;
 }
 .inputDnD .form-control-file:before{
-content: attr(data-title);
-position: absolute;
-left: 0;
-width: 100%;
-min-height: 6em;
-line-height: 2em;
-padding-top: 4.5em;
-opacity: 1;
-visibility: visible;
-text-align: center;
-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-overflow: visible;
-pointer-events: none;
+    content: attr(data-title);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    min-height: 6em;
+    line-height: 2em;
+    padding-top: 4.5em;
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    overflow: visible;
+    pointer-events: none;
 }
 
 @media (min-width: 576px) {
     .list {
-        max-height:  450px;
+        max-height:  490px;
     }
 }
-.list {
-    overflow-y: auto;
-    overflow-x: hidden;
+.mt-18 {
+    margin-top: 18px;
+}
+.icon-upload {
+    margin-bottom: 2px;
+    width: 15px;
+}
+.label {
+    color: #606060;
 }
