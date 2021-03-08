@@ -1,22 +1,28 @@
+html {
+  width: 100%;
+  height: 100%;
+}
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/bg-login.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .display-none {
-    display: none;
+  display: none;
 }
 .wrap-content {
-    position: fixed;
-    background-image: url("../../images/bg-login.png");
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 .error-text {
-    color: #FF0000;
-    padding-left: 18px;
-    padding-top: 10px;
+  color: #ff0000;
+  padding-left: 18px;
+  padding-top: 10px;
 }
 .mb-50 {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }

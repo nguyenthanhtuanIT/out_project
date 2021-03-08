@@ -28,6 +28,7 @@
 }
 .wrap-checkbox-all {
     padding-top: 50px;
+
 }
 .block-btn-action {
     position:absolute;
@@ -90,8 +91,8 @@ hr {
 }
 
 .page-numb {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     float: left;
     margin-left: 10px;
